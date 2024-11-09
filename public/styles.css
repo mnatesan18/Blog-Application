@@ -1,8 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   
   h1 {
@@ -11,18 +13,70 @@ body {
     margin-top: 20px;
   }
   
-  a {
+  /* Center the form container and add padding */
+  .form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style labels and inputs */
+  .form-container label {
     display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-container input[type="text"],
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  
+  /* Adjust the height of the textarea */
+  .form-container textarea {
+    height: 150px;
+    resize: vertical; /* Allows vertical resizing only */
+  }
+  
+  /* Style the submit button */
+  .form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background-color: #218838;
+  }
+  
+  /* Back link */
+  a {
     text-align: center;
     color: #007bff;
-    margin-bottom: 20px;
+    margin-top: 15px;
     text-decoration: none;
   }
   
   a:hover {
     color: #0056b3;
   }
-  
+    
   /* Grid container */
   .post-grid {
     display: grid;
