@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Center the form container and add padding */
+  .form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style labels and inputs */
+  .form-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-container input[type="text"],
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  
+  /* Adjust the height of the textarea */
+  .form-container textarea {
+    height: 150px;
+    resize: vertical; /* Allows vertical resizing only */
+  }
+  
+  /* Style the submit button */
+  .form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background-color: #218838;
+  }
+  
+  /* Back link */
+  a {
+    text-align: center;
+    color: #007bff;
+    margin-top: 15px;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+    
+  /* Grid container */
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Individual post card */
+  .post-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .post-card h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  /* Content styling */
+  .post-card p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  /* Edit and delete buttons */
+  .post-card a,
+  .post-card form button {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .post-card a {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .post-card a:hover {
+    background-color: #0056b3;
+  }
+  
+  .post-card form button {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .post-card form button:hover {
+    background-color: #c82333;
+  }
+  
